@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Share Modal | sawan yadav</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="wrapper">
+        <div class="card-wrapper">
+            <div>
+                <img style="width: 135px; height: 127px; border-radius: 50%;  margin-top: 40px;"
+                    src="./aseets/profile.image.png" alt="user">
+            </div>
+            <div class="user-name" style="font-size:larger">
+                <h2>Sawan Yadav</h2>
+            </div>
+            <div class="designation" style="font-size:20px">
+                <h3>Software Engineer</h3>
+            </div>
+            <div class="botton-group">
+                <button onclick="openModal()" class="btn-share btn-card">
+
+                    <div> <i class="fa-solid fa-share"></i> share my profile</div>
+                </button>
+
+                <button class="btn-follow btn-card">Follow me</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Component -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div style=" margin-left: 210px; cursor: pointer;">
+                <i onclick="closeModal()" class="fa-solid fa-x"></i>
+            </div>
+        </div>
+        <div style="margin: 20px;">
+            <h3>Share this via</h3>
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/sawan-yadav-517a14326" target="_blank" class="icon" id="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yadavsawan4062-hub" target="_blank" class="icon" id="github">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/sawanyadav018/" target="_blank" class="icon" id="instagram">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+                <a href="https://wa.me/916261129600" target="_blank" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:sawanyadav4062@gmail.com" class="icon" target="_blank" id="email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="script.js"></script>
+</body>
+
+</html>
